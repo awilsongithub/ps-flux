@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# PS-FLUX PROJECT SPECIFIC
+
+using jsonServer.
+
+-   start executes run-p(parallel) start:dev & start:api
+-   with prestarts that recreate the db fresh on startup
+
+# GENERIC
+
 ## Available Scripts
 
 In the project directory, you can run:
