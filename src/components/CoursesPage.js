@@ -5,13 +5,20 @@ import * as actions from "../actions/courseActions";
 import store from "../stores/courseStore";
 
 function CoursesPage() {
-	const [courses, setCourses] = useState([]);
+	const [courses, setCourses] = useState(store.getCourses());
 	var sorted = false;
 
 	useEffect(() => {
-		setCourses(store.getCourses());
-		// actions.getCourses().then((_courses) => setCourses(_courses));
+		store.addChangeListener(onChange);
+		if (store.getCourses().length === 0) {
+			actions.loadCourses();
+		}
+		return () => store.removeChangeListener(onChange);
 	}, []);
+
+	function onChange() {
+		setCourses(store.getCourses());
+	}
 
 	return (
 		<>

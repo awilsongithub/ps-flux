@@ -2,17 +2,17 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth0",
+      "title": "Securing React Apps with Oauth2",
       "slug": "react-auth0-authentication-security",
-      "authorId": 2,
+      "authorId": 1,
       "category": "JavaScript"
     },
     {
       "id": 2,
-      "title": "React: The Basdfadsfig Giant Super Huge PictureSDa",
+      "title": "React: The Big Picture",
       "slug": "react-big-picture",
       "authorId": 1,
-      "category": "Miscellaneousdsf"
+      "category": "JavaScript"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "id": 4,
       "title": "Building a JavaScript Development Environment",
       "slug": "javascript-development-environment",
-      "authorId": 2,
+      "authorId": 1,
       "category": "JavaScript"
     },
     {
@@ -72,59 +72,83 @@
     },
     {
       "id": 11,
-      "slug": "adsf",
-      "title": "adsf",
-      "authorId": 1,
-      "category": "asdfa",
-      "createdAt": 1598459204827
+      "slug": "scrambling",
+      "title": "scrambling",
+      "authorId": 2,
+      "category": "Foo",
+      "createdAt": 1598575292519
     },
     {
       "id": 12,
-      "slug": "asdfadsfasdfasdfasdf",
-      "title": "asdfadsfasdfasdfasdf",
-      "authorId": 1,
-      "category": "adf",
-      "createdAt": 1598459213592
+      "slug": "foo",
+      "title": "foo",
+      "authorId": 2,
+      "category": "foo",
+      "createdAt": 1598576196977
     },
     {
       "id": 13,
-      "slug": "asdfasdf",
-      "title": "asdfasdf",
-      "authorId": 2,
-      "category": "asdf",
-      "createdAt": 1598573385672
+      "slug": "adf",
+      "title": "adf",
+      "authorId": 3,
+      "category": "asd",
+      "createdAt": 1598576793686
     },
     {
       "id": 14,
-      "slug": "my-thur-night-course",
-      "title": "my thur night course",
+      "slug": "egg-sandwhich",
+      "title": "egg sandwhich",
       "authorId": 2,
-      "category": "thur night stuff",
-      "createdAt": 1598573408186
+      "category": "foofoo sandwhich making",
+      "createdAt": 1598576831068
     },
     {
       "id": 15,
-      "slug": "scrambling-eggs-with-success",
-      "title": "Scrambling eggs with success",
+      "slug": "making-marshmallows",
+      "title": "make good fud",
       "authorId": 2,
-      "category": "Cooking",
-      "createdAt": 1598574665764
+      "category": "make good",
+      "createdAt": 1598576916017
     },
     {
       "id": 16,
-      "slug": "adsf",
-      "title": "adsf",
+      "slug": "a",
+      "title": "a",
       "authorId": 2,
-      "category": "sadf",
-      "createdAt": 1598574718767
+      "category": "a",
+      "createdAt": 1598577127576
     },
     {
       "id": 17,
-      "slug": "scrambling-eggs-with-success",
-      "title": "Scrambling eggs with success",
+      "slug": "adf",
+      "title": "adf",
       "authorId": 2,
-      "category": "Miscellaneous",
-      "createdAt": 1598574852416
+      "category": "adf",
+      "createdAt": 1598578402388
+    },
+    {
+      "id": 18,
+      "slug": "asdf",
+      "title": "asdf",
+      "authorId": 1,
+      "category": "adf",
+      "createdAt": 1598578546800
+    },
+    {
+      "id": 19,
+      "slug": "margaritas",
+      "title": "margaritas",
+      "authorId": 3,
+      "category": "margaritas",
+      "createdAt": 1598578829014
+    },
+    {
+      "id": 20,
+      "slug": "adfasdfasdfasdf",
+      "title": "adfasdfasdfasdf!!!!!!",
+      "authorId": 1,
+      "category": "adsfadfasdfasfd",
+      "createdAt": 1598578853701
     }
   ],
   "authors": [
