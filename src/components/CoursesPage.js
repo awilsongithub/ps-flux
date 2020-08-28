@@ -1,44 +1,24 @@
-import React from "react";
-import { getCourses } from "../api/courseApi";
+import React, { useEffect, useState } from "react";
+import CourseList from "./CourseList";
+import Heading from "./Heading";
+import * as actions from "../actions/courseActions";
+import store from "../stores/courseStore";
 
-class CoursesPage extends React.Component {
-	state = {
-		courses: [],
-	};
+function CoursesPage() {
+	const [courses, setCourses] = useState([]);
+	var sorted = false;
 
-	componentDidMount() {
-		getCourses().then((courses) => this.setState({ courses: courses }));
-	}
+	useEffect(() => {
+		setCourses(store.getCourses());
+		// actions.getCourses().then((_courses) => setCourses(_courses));
+	}, []);
 
-	renderCourseRow(c) {
-		return (
-			<tr key={c.id}>
-				<td>{c.title}</td>
-				<td>{c.authorId}</td>
-				<td>{c.category}</td>
-			</tr>
-		);
-	}
-
-	render() {
-		return (
-			<>
-				<h2>Courses</h2>
-				<table className='table'>
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Author ID</th>
-							<th>Category</th>
-						</tr>
-					</thead>
-					<tbody>
-						{this.state.courses.map(this.renderCourseRow)}
-					</tbody>
-				</table>
-			</>
-		);
-	}
+	return (
+		<>
+			<Heading title='Courses' linkText='Add Course' linkTo='/course' />
+			<CourseList courses={courses} />
+		</>
+	);
 }
 
 export default CoursesPage;

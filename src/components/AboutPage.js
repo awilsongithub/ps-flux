@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 class AboutPage extends Component {
 	state = { name: "" };
-	updateName(e) {
+	updateName = (e) => {
 		this.setState({ name: e.target.value });
-	}
+	};
 
 	render() {
 		return (
